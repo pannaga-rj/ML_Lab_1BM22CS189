@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from random import sample
 
 # Step 1: Load CSV
-data = pd.read_csv("your_data.csv")
+data = pd.read_csv("/content/sample_data/data.csv.txt")
 X = data.select_dtypes(include=['float64', 'int64']).values
 
 # Step 2: Choose K clusters
@@ -50,3 +50,18 @@ if n_features == 2:
     plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=200, marker='x')
     plt.title("K-Means Clustering (Manual)")
     plt.show()
+
+
+
+
+# Sample Data
+# Feature1,Feature2
+# 1.1,2.0
+# 1.5,1.8
+# 1.3,1.9
+# 5.1,8.2
+# 6.2,8.0
+# 5.9,8.4
+# 9.1,11.2
+# 8.7,11.0
+# 9.2,10.8
